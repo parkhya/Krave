@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/congratulationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#cc000000"
+        android:visibility="visible"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/home2_margin_top"
+            android:text="You have a match."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/home2_text4_size" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="@dimen/home2_margin11_top"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/home2_icon_margin" >
+
+                <ImageView
+                    android:id="@+id/userImageViewcongratulation"
+                    android:layout_width="@dimen/home2_icon2_widht"
+                    android:layout_height="@dimen/home2_icon2_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+                <ImageView
+                    android:id="@+id/userImageViewcongratulationStamp"
+                    android:layout_width="@dimen/home2_icon2_widht"
+                    android:layout_height="@dimen/home2_icon2_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/stamp" 
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/dudeImageView"
+                    android:layout_width="@dimen/home2_icon2_widht"
+                    android:layout_height="@dimen/home2_icon2_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+                <ImageView
+                    android:id="@+id/dudeImageViewStamp"
+                    android:layout_width="@dimen/home2_icon2_widht"
+                    android:layout_height="@dimen/home2_icon2_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/stamp" 
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/home2_margin111_top"
+            android:text="Congratulations!"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/home2_text5_size" />
+
+        <Button
+            android:id="@+id/sendmsgbtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/home2_margin1111_left"
+            android:layout_marginRight="@dimen/home2_margin1111_right"
+            android:layout_marginTop="@dimen/home2_margin1111_top"
+            android:background="@drawable/buttonred"
+            android:text="SEND HIM A MESSAGE"
+            android:textColor="#ffffff" 
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/keepSearchingButton"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/sendmsgbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/home2_margin2222_left"
+            android:layout_marginRight="@dimen/home2_margin2222_right"
+            android:layout_marginTop="@dimen/home2_margin2222_top"
+            android:background="@drawable/buttonblack"
+            android:text="KEEP SEARCHING"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+</LinearLayout>

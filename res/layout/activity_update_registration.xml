@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/questionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/question_layout_side_margin"
+        android:layout_marginRight="@dimen/question_layout_side_margin"
+        android:layout_marginTop="@dimen/ui_comp_margin" >
+
+        <LinearLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/registration_top_layout_padding" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/registration_top_layout_padding"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/registration_layout_margin_bottom"
+                    android:layout_marginTop="@dimen/registration_layout_margin_top"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/registration_text_size"
+                        android:text="SELECT LANGUAGE"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#323232"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/selectLanguage"
+                        android:layout_width="@dimen/registration_icon_width"
+                        android:layout_height="@dimen/registration_icon_height"
+                        android:layout_margin="@dimen/registration_icon_layout_margin"
+                        android:background="@drawable/eng_select"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/registration_edittext_height"
+                    android:background="@drawable/edittext_reg_bg"
+                    android:hint="USER NAME"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="14" />
+
+                <EditText
+                    android:id="@+id/last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/registration_edittext_height"
+                    android:layout_marginTop="@dimen/registration_edittext_margin_top"
+                    android:background="@drawable/edittext_reg_bg"
+                    android:hint="LAST NAME"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/registration_edittext_height"
+                    android:layout_marginTop="@dimen/registration_edittext_margin_top"
+                    android:background="@drawable/edittext_reg_bg"
+                    android:hint="EMAIL"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/mobile_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/registration_edittext_height"
+                    android:layout_marginTop="@dimen/registration_edittext_margin_top"
+                    android:background="@drawable/edittext_reg_bg"
+                    android:hint="MOBILE NUMBER"
+                    android:imeOptions="actionNext"
+                    android:inputType="number" 
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/registration_edittext_height"
+                    android:layout_marginTop="@dimen/registration_edittext_margin_top"
+                    android:background="@drawable/edittext_reg_bg"
+                    android:hint="PASSWORD"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/confirmPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/registration_edittext_height"
+                    android:layout_marginBottom="@dimen/registration_edittext_margin_bottom"
+                    android:layout_marginTop="@dimen/registration_edittext_margin_top"
+                    android:background="@drawable/edittext_reg_bg"
+                    android:hint="CONFIRM PASSWORD"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/progressIcons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/progress_icons_bottom_margin"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/progressIcon_1"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:background="@drawable/selected_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_2"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_3"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_4"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_5"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_6"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/registration_icon_submit_height"
+        android:layout_above="@+id/progressIcons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/progress_icons_bottom_margin"
+        android:layout_marginLeft="@dimen/registration_icon_layout_margin_right"
+        android:layout_marginRight="@dimen/registration_icon_layout_margin_right"
+        android:layout_marginTop="@dimen/ui_comp_margin"
+        android:background="@drawable/btn_sbmt" />
+
+</RelativeLayout>

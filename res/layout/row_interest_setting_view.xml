@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/itemImageViewCheck"
+                android:layout_width="@dimen/row_setting_interest_h_w"
+                android:layout_height="@dimen/row_setting_interest_h_w"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/uncheck"
+                android:scaleType="fitXY" />
+
+            <com.ps.utill.CircleImageView
+                android:id="@+id/itemImageView"
+                android:layout_width="@dimen/row_setting_interest_h_w"
+                android:layout_height="@dimen/row_setting_interest_h_w"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY" >
+            </com.ps.utill.CircleImageView>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/itemNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frame"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:text="TextView"
+            android:textColor="@color/gray_color_text"
+            android:textSize="@dimen/row_setting_interest_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

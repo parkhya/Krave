@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submitButton4"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title_bar"
+            layout="@layout/title_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/registration_layout4_height"
+                android:orientation="vertical" >
+
+                <GridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="#00000000"
+                    android:numColumns="3" 
+                    >
+                </GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/registration_view2_height"
+                    android:layout_marginTop="@dimen/registration_layout_margin_bottom"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/registration_text4_margin_top"
+                    android:text="Would you like to show your matches facebook like"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/facebookLikeIntegrationLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/facebookLikeIntegration"
+                        android:layout_width="@dimen/registration_icon4_width"
+                        android:layout_height="@dimen/registration_icon4_height"
+                        android:background="@drawable/uncheck" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/facebookLikeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/registration_layout4_margin_left"
+                        android:text="Enable Facebook Integration"
+                        android:textSize="12sp" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/submitButton4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/registration_icon_submit_height"
+        android:layout_above="@+id/progressIcons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/progress_icons_bottom_margin"
+        android:layout_marginLeft="@dimen/registration_icon_layout_margin_right"
+        android:layout_marginRight="@dimen/registration_icon_layout_margin_right"
+        android:layout_marginTop="@dimen/ui_comp_margin"
+        android:background="@drawable/btn_sbmt" />
+
+    <LinearLayout
+        android:id="@+id/progressIcons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/progress_icons_bottom_margin" >
+
+        <ImageView
+            android:id="@+id/progressIcon_1"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:background="@drawable/normal_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/progressIcon_2"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_3"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_4"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_5"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/selected_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_6"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+    </LinearLayout>
+
+</RelativeLayout>

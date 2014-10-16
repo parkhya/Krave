@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#414042"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/r_layout_width"
+        android:layout_height="@dimen/r_header_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/backFromListName1"
+                android:layout_width="@dimen/r_left_right_icon_height_weight"
+                android:layout_height="@dimen/r_left_right_icon_height_weight"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/btn_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/listTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Lists"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/r_header_text_size" />
+
+        <LinearLayout
+            android:id="@+id/editListButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right" >
+
+            <TextView
+                android:id="@+id/editListButtonTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:text="Edit"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/r_header_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- createNewListImageButton -->
+
+    <RelativeLayout
+        android:layout_width="@dimen/r_layout_width"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/r_header_height"
+            android:layout_above="@+id/createNewListsLayout"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/r_header_height"
+                android:gravity="center|clip_horizontal|left"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/searchNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#323232"
+                    android:drawableLeft="@drawable/sarch"
+                    android:ems="10"
+                    android:hint="Search"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray"
+                    android:textSize="35dp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/nameList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/createNewListsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/createNewListTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New List"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/r_header_text_size" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/r_left_right_icon_height_weight"
+                android:layout_height="@dimen/r_left_right_icon_height_weight"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_plus"
+                android:src="@drawable/btn_plus" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

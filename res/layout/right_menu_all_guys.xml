@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#414042"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="@dimen/r_layout_width"
+        android:layout_height="@dimen/r_header_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/editAllGuysButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Edit"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/r_header_text_size" />
+
+        <TextView
+            android:id="@+id/allGuys"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Chat"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/r_header_text_size" />
+
+        <TextView
+            android:id="@+id/listsButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:text="Lists"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/r_header_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="@dimen/r_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout3"
+        android:layout_below="@+id/layout1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/r_search_edit_text_height"
+            android:gravity="center|clip_horizontal|left"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/searchDude"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/r_icon_margin_padding"
+                android:background="#323232"
+                android:drawableLeft="@drawable/sarch"
+                android:ems="10"
+                android:hint="Search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/dudeList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:divider="#525252"
+            android:dividerHeight="1sp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="@dimen/r_layout_width"
+        android:layout_height="@dimen/r_search_edit_text_height"
+        android:layout_alignParentBottom="true"
+        android:background="#323232"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/reuistsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/requestTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Requests"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/r_header_text_size" />
+
+            <ImageView
+                android:id="@+id/requestsNotification"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/notification"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/notificationRCount"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:visibility="gone" >
+            </TextView>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/NextButton"
+            android:layout_width="@dimen/r_header_text_size"
+            android:layout_height="@dimen/r_header_text_size"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/arrow" />
+    </LinearLayout>
+
+</RelativeLayout>

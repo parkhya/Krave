@@ -1,0 +1,49 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:id="@+id/progressIcons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/progress_icons_bottom_margin" >
+
+        <ImageView
+            android:id="@+id/progressIcon_1"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:background="@drawable/selected_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_2"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_3"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_4"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressIcons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/progress_icons_bottom_margin"
+        android:layout_marginTop="@dimen/ui_comp_margin"
+        android:background="@drawable/submit_button" />
+
+</merge>

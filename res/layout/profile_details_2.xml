@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/questionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submitButton2"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginTop="@dimen/ui_comp_margin"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/question_layout_side_margin"
+            android:paddingRight="@dimen/question_layout_side_margin" >
+
+            <RelativeLayout
+                android:id="@+id/hightLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/registration_edittext_height"
+                android:layout_margin="@dimen/ui_comp_margin"
+                android:background="@drawable/edittext_reg_bg" >
+
+                <TextView
+                    android:id="@+id/feet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:text="HEIGHT"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/home2_text4_size" />
+
+                <TextView
+                    android:id="@+id/selectedHight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/home2_text4_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/weightLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/registration_edittext_height"
+                android:layout_margin="@dimen/ui_comp_margin"
+                android:background="@drawable/edittext_reg_bg" >
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:text="WEIGHT"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/home2_text4_size" />
+
+                <TextView
+                    android:id="@+id/selectedWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/home2_text4_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/registration_edittext_height"
+                android:layout_margin="@dimen/ui_comp_margin"
+                android:background="@drawable/edittext_reg_bg" >
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:text="AGE"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/home2_text4_size" />
+
+                <TextView
+                    android:id="@+id/selectedAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/home2_text4_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/registration_view2_height"
+            android:layout_marginTop="@dimen/registration_layout_margin_bottom"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/question_layout_side_margin"
+            android:paddingRight="@dimen/question_layout_side_margin" >
+
+            <TextView
+                android:id="@+id/relationShipStausText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/registration_text2_layout_marginbottom"
+                android:layout_marginTop="@dimen/registration_text2_layout_margintop"
+                android:text="RELATIONSHIP STATUS"
+                android:textSize="@dimen/registration_text2_size" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" >
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    style="@style/RadioButtonAppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textColor="@color/gray"
+                    android:text="SINGLE" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    style="@style/RadioButtonAppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:text="IN A RELATIONSHIP" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    style="@style/RadioButtonAppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:text="DON&apos;T SHOW" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progressIcons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/progress_icons_bottom_margin" >
+
+        <ImageView
+            android:id="@+id/progressIcon_1"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:background="@drawable/normal_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/progressIcon_2"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_3"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/selected_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_4"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_5"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+
+        <ImageView
+            android:id="@+id/progressIcon_6"
+            android:layout_width="@dimen/progress_icon_size"
+            android:layout_height="@dimen/progress_icon_size"
+            android:layout_marginLeft="@dimen/ui_comp_margin"
+            android:background="@drawable/normal_icon" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/submitButton2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/registration_icon_submit_height"
+        android:layout_above="@+id/progressIcons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/progress_icons_bottom_margin"
+        android:layout_marginLeft="@dimen/registration_icon_layout_margin_right"
+        android:layout_marginRight="@dimen/registration_icon_layout_margin_right"
+        android:layout_marginTop="@dimen/ui_comp_margin"
+        android:background="@drawable/btn_sbmt" />
+
+</RelativeLayout>

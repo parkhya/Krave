@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <com.ps.utill.CircleImageView
+                android:id="@+id/userimage"
+                android:layout_width="@dimen/row_home2_circle_image_view_h_w"
+                android:layout_height="@dimen/row_home2_circle_image_view_h_w"
+                android:src="@drawable/com_facebook_profile_picture_blank_portrait" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="@dimen/row_requist_cross_right_icon_h_w"
+            android:layout_height="@dimen/row_requist_cross_right_icon_h_w"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/btn_tick" />
+
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="@dimen/row_requist_cross_right_icon_h_w"
+            android:layout_height="@dimen/row_requist_cross_right_icon_h_w"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/add"
+            android:background="@drawable/btn_cross" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/cross"
+            android:layout_toRightOf="@+id/frameLayout1"
+            android:text="dude named vggggggggg ggggggg g g g gvssd vddsc daa"
+            android:textColor="@color/white"
+            android:textSize="@dimen/row_home2_name_textsize" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#414042"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/r_header_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/r_icon_margin_padding"
+            android:gravity="left"
+            android:text="Cancel"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/r_header_text_size" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="51dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Add To List"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/r_header_text_size" />
+
+        <ImageView
+            android:id="@+id/createNewListImageButton"
+            android:layout_width="@dimen/r_left_right_icon_height_weight"
+            android:layout_height="@dimen/r_left_right_icon_height_weight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/r_icon_margin_padding"
+            android:background="@drawable/list_plus"
+            android:gravity="right"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/createNewListsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/createNewList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New List"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/r_header_text_size" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/r_left_right_icon_height_weight"
+                android:layout_height="@dimen/r_left_right_icon_height_weight"
+                android:layout_margin="@dimen/r_icon_margin_padding"
+                android:src="@drawable/list_plus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profilePickLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/r_horizontal_list_view_size"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.ps.horizontal_listview.HorizontalListView
+                android:id="@+id/horizontalListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center" >
+            </com.ps.horizontal_listview.HorizontalListView>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/createNewListsLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/profilePickLayout1" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/congratulationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#cc000000"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/home2_margin_top"
+            android:text="Do you want to chat now?"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/home2_text4_size" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="@dimen/home2_margin11_top"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/home2_icon_margin" >
+
+                <ImageView
+                    android:id="@+id/userProfileImage"
+                    android:layout_width="@dimen/home2_icon2_widht"
+                    android:layout_height="@dimen/home2_icon2_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+                <ImageView
+                    android:id="@+id/userProfileImageStamp"
+                    android:layout_width="@dimen/home2_icon2_widht"
+                    android:layout_height="@dimen/home2_icon2_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/stamp" 
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/dudeProfileImage"
+                    android:layout_width="@dimen/home2_icon2_widht"
+                    android:layout_height="@dimen/home2_icon2_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+                <ImageView
+                    android:id="@+id/dudeProfileImageStamp"
+                    android:layout_width="@dimen/home2_icon2_widht"
+                    android:layout_height="@dimen/home2_icon2_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/stamp" 
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Congratulations!"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/home2_text5_size" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/block_dude_button_height"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/home2_margin1111_left"
+            android:layout_marginRight="@dimen/home2_margin1111_right"
+            android:layout_marginTop="@dimen/home2_margin1111_top"
+            android:background="@drawable/yes_logout" />
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/block_dude_button_height"
+            android:layout_below="@+id/ok"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/home2_margin2222_left"
+            android:layout_marginRight="@dimen/home2_margin2222_right"
+            android:layout_marginTop="@dimen/home2_margin2222_top"
+            android:background="@drawable/cancel_logout" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#cc000000"
+    android:orientation="vertical" >
+
+    <!-- android:id="@+id/imageLayout" -->
+
+    <LinearLayout
+        android:id="@+id/cancleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cancleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="30sp"
+            android:textColor="#ffffffff" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/cancelsf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deleteLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/delete_image" />
+
+        <TextView
+            android:id="@+id/deleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Delete Picture"
+            android:textColor="#ffffffff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/congratulationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/addPictureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Add picture"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffffff"
+            android:textSize="60dp" />
+
+        <Button
+            android:id="@+id/choose_photo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/addPictureTextView"
+            android:layout_marginLeft="@dimen/home2_margin2222_left"
+            android:layout_marginRight="@dimen/home2_margin2222_right"
+            android:layout_marginTop="@dimen/home2_margin2222_top"
+            android:background="@drawable/gallery"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/launch_editor"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/choose_photo"
+            android:layout_marginLeft="@dimen/home2_margin2222_left"
+            android:layout_marginRight="@dimen/home2_margin2222_right"
+            android:layout_marginTop="@dimen/home2_margin2222_top"
+            android:background="@drawable/take_a_picture"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/image_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

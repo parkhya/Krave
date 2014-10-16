@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#414042"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/r_layout_width"
+        android:layout_height="@dimen/r_header_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/editSubList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Edit"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/r_header_text_size" />
+
+        <TextView
+            android:id="@+id/listName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Lists"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/r_header_text_size" />
+
+        <TextView
+            android:id="@+id/lists"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dp"
+            android:text="Lists"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/r_header_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/r_layout_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/r_header_height"
+            android:gravity="center|clip_horizontal|left"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/searchSubListEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#323232"
+                android:drawableLeft="@drawable/sarch"
+                android:ems="10"
+                android:hint="Search"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/subList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/congratulationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cc000000"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/home2_margin1111_left"
+            android:layout_marginRight="@dimen/home2_margin1111_right"
+            android:gravity="center"
+            android:text="Do you really want to logout ?"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/home2_text5_size" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/block_dude_button_height"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/home2_margin1111_left"
+            android:layout_marginRight="@dimen/home2_margin1111_right"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/yes_logout"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/block_dude_button_height"
+            android:layout_below="@+id/ok"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/home2_margin2222_left"
+            android:layout_marginRight="@dimen/home2_margin2222_right"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cancel_logout"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

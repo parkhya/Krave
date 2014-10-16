@@ -1,0 +1,211 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="ui_comp_margin">5dp</dimen>
+    <dimen name="ui_comp_margin2">10dp</dimen>
+    <dimen name="ui_comp_side_margin">16dp</dimen>
+    <dimen name="title_bar_height">48dp</dimen>
+    <dimen name="login_bottom_marign">80dp</dimen>
+    <dimen name="progress_icon_size">12dp</dimen>
+    <dimen name="progress_icons_bottom_margin">24dp</dimen>
+    <dimen name="question_layout_side_margin">16dp</dimen>
+
+    <!-- Left Menu -->
+    <dimen name="left_menu_top_layout_width">260dp</dimen>
+    <dimen name="left_menu_icon_width">25dp</dimen>
+    <dimen name="left_menu_icon_height">25dp</dimen>
+    <dimen name="left_menu_icon_layout_margin_left">20dp</dimen>
+    <dimen name="left_menu_text_layout_margin_left">10dp</dimen>
+    <dimen name="left_menu_text_size">15sp</dimen>
+    <dimen name="left_menu_icon_arrow_layout_margin_right">15dp</dimen>
+
+    <!-- Registration -->
+    <dimen name="registration_edittext_margin_bottom_new">15dp</dimen>
+<dimen name="registration_icon_layout_margin_right_new">20dp</dimen>
+    <dimen name="registration_top_layout_padding">10dp</dimen>
+    <dimen name="registration_top_layout_margin">5dp</dimen>
+    <dimen name="registration_image_layout_h">200dp</dimen>
+    <dimen name="registration_layout_margin_bottom">5dp</dimen>
+    <dimen name="registration_layout_margin_top">5dp</dimen>
+    <dimen name="registration_text_size">10dp</dimen>
+    <dimen name="registration_icon_width">70dp</dimen>
+    <dimen name="registration_icon_height">35dp</dimen>
+    <dimen name="registration_icon_layout_margin">5dp</dimen>
+    <dimen name="registration_icon_layout_margin_left">20dp</dimen>
+    <dimen name="registration_icon_layout_margin_right">20dp</dimen>
+    <dimen name="registration_edittext_height">41dp</dimen>
+    <dimen name="about_edittext_height">80dp</dimen>
+    <dimen name="registration_icon_submit_height">50dp</dimen>
+    <dimen name="registration_icon_submit_margin_top">10dp</dimen>
+    <dimen name="registration_icon_submit_margin_left">10dp</dimen>
+    <dimen name="registration_icon_all_height">45dp</dimen>
+    <dimen name="registration_view2_height">1dp</dimen>
+    <dimen name="registration_layout_margintop">10dp</dimen>
+    <dimen name="registration_text2_layout_margintop">5dp</dimen>
+    <dimen name="registration_text2_layout_marginbottom">5dp</dimen>
+    <dimen name="registration_text2_size">15dp</dimen>
+    <dimen name="registration_layout4_margin_bottom">50dp</dimen>
+    <dimen name="registration_layout4_height">240dp</dimen>
+    <dimen name="registration_layout4_margin_left">5dp</dimen>
+    <dimen name="registration_text4_margin_top">8dp</dimen>
+    <dimen name="registration_icon4_height">25dp</dimen>
+    <dimen name="registration_icon4_width">25dp</dimen>
+    <dimen name="registration_layout5_margin">10dp</dimen>
+    <dimen name="registration_icon5_margin">15dp</dimen>
+    <dimen name="registration_icon5_padding">1dp</dimen>
+    <dimen name="registration_layout55_margin">2dp</dimen>
+    <dimen name="registration_layout555_margin">4dp</dimen>
+    <dimen name="registration_edittext5_height">41dp</dimen>
+    <dimen name="registration_icon5_height">25dp</dimen>
+    <dimen name="registration_icon5_width">25dp</dimen>
+    <dimen name="registration_text5_layout_margin_left">5dp</dimen>
+    <dimen name="registration_edittext_margin_top">10dp</dimen>
+    <dimen name="registration_edittext_margin_bottom">10dp</dimen>
+
+    <!-- Login -->
+    <dimen name="login_icon_height">120dp</dimen>
+    <dimen name="login_icon_width">2600dp</dimen>
+    <dimen name="login_top_layout_height">50dp</dimen>
+    <dimen name="login_top_layout_margin_left">20dp</dimen>
+    <dimen name="login_top_layout_margin_right">20dp</dimen>
+    <dimen name="login_edittext_padding_left">10dp</dimen>
+    <dimen name="login_icon1_height">50dp</dimen>
+    <dimen name="login_view_height">2dp</dimen>
+    <dimen name="login_view_margin_top">10dp</dimen>
+    <dimen name="login_text_margin">10dp</dimen>
+    <dimen name="login_text_size">20dp</dimen>
+
+    <!-- Home -->
+    <dimen name="home_top_layout_height">40dp</dimen>
+    <dimen name="home_view_height">1dp</dimen>
+    <dimen name="home_layout_margin_left">10dp</dimen>
+    <dimen name="home_text_margin_left">5dp</dimen>
+    <dimen name="home_text_margin_right">5dp</dimen>
+    <dimen name="home_text_size">12dp</dimen>
+    <dimen name="home_icon_height">25dp</dimen>
+    <dimen name="home_icon_widht">25dp</dimen>
+    <dimen name="home_layout_height">50dp</dimen>
+    <dimen name="home_icon1_margin_left">22dp</dimen>
+    <dimen name="home_icon2_margin_left">17dp</dimen>
+    <dimen name="home_search_city_edit_text_height">25dp</dimen>
+    <dimen name="home_swipe_layout_hint_height">40dp</dimen>
+
+    <!-- Home2 -->
+    <dimen name="home2_top_layout_height">40dp</dimen>
+    <dimen name="home2_view_height">1dp</dimen>
+    <dimen name="home2_margin_right">10dp</dimen>
+    <dimen name="home2_text_margin_left">5dp</dimen>
+    <dimen name="home2_text_margin_right">10dp</dimen>
+    <dimen name="home2_text_size">10dp</dimen>
+    <dimen name="home2_text1_size">30dp</dimen>
+    <dimen name="home2_text2_size">15dp</dimen>
+    <dimen name="home2_text3_size">15dp</dimen>
+    <dimen name="home2_text4_size">15dp</dimen>
+    <dimen name="home2_text5_size">30dp</dimen>
+    <dimen name="home2_icon_height">30dp</dimen>
+    <dimen name="home2_icon_widht">30dp</dimen>
+    <dimen name="home2_layout_height">100dp</dimen>
+    <dimen name="home2_layout1_height">70dp</dimen>
+    <dimen name="home2_layout_padding_left">20dp</dimen>
+    <dimen name="home2_icon1_height">50dp</dimen>
+    <dimen name="home2_icon1_widht">50dp</dimen>
+    <dimen name="home2_icon1_60">60dp</dimen>
+    <dimen name="home2_margin_Left">30dp</dimen>
+    <dimen name="home2_margin_Right">30dp</dimen>
+    <dimen name="home2_margin_top">10dp</dimen>
+    <dimen name="home2_margin11_top">15dp</dimen>
+    <dimen name="home2_icon2_height">120dp</dimen>
+    <dimen name="home2_icon2_widht">120dp</dimen>
+    <dimen name="home2_icon_margin">5dp</dimen>
+    <dimen name="home2_margin111_top">49dp</dimen>
+    <dimen name="home2_margin1111_left">30dp</dimen>
+    <dimen name="home2_margin1111_right">30dp</dimen>
+    <dimen name="home2_margin1111_top">20dp</dimen>
+    <dimen name="home2_margin2222_left">30dp</dimen>
+    <dimen name="home2_margin2222_right">30dp</dimen>
+    <dimen name="home2_margin2222_top">10dp</dimen>
+    <dimen name="home2_height">70dp</dimen>
+    <dimen name="home2_margin_left">-30dp</dimen>
+    <dimen name="home2_icon3_height">100dp</dimen>
+    <dimen name="home2_icon3_widht">100dp</dimen>
+    <!-- Home3 -->
+    <dimen name="home3_top_layout_height">50dp</dimen>
+    <dimen name="home3_cross_icon_height_weight">40dp</dimen>
+    <dimen name="home3_horizontal_listview_height">40dp</dimen>
+    <dimen name="home3_arrow_hw">40dp</dimen>
+    <dimen name="setting_arrow_hw">20dp</dimen>
+
+    <!-- home activity -->
+    <dimen name="header_icon_height">40dp</dimen>
+    <dimen name="header_icon_width">40dp</dimen>
+    <dimen name="header_icon_left_right_margin">10dp</dimen>
+    <dimen name="header_notification_height_weight">10dp</dimen>
+    <dimen name="krave_image_height">30dp</dimen>
+
+    <!-- fragment chat freiend and chat -->
+    <dimen name="chat_friend_header_height">70dp</dimen>
+    <dimen name="chat_friend_icon_margin">5dp</dimen>
+    <dimen name="chat_friend_gray_bar_height">40dp</dimen>
+    <dimen name="chat_circel_imageview_height_weight">50dp</dimen>
+    <dimen name="chat_circel_online_height_weight">55dp</dimen>
+    <dimen name="chat_edittext_layout_height">50dp</dimen>
+    <dimen name="chat_send_button_height">30dp</dimen>
+    <dimen name="chat_send_button_width">60dp</dimen>
+    <dimen name="chat_block_image_height_weight">25dp</dimen>
+
+    <!-- fragment update Profile image -->
+
+    <dimen name="fragment_profile_image_top_layout_h">210dp</dimen>
+     <dimen name="fragment_profile_image_h_w">160dp</dimen>
+    <dimen name="fragment_profile_image_h_w_small">70dp</dimen>
+    <dimen name="fragment_profile_about_edit_text_h">100dp</dimen>
+    <dimen name="fragment_profile_bottom_margin">40dp</dimen>
+    <dimen name="fragment_profile_image_bottom_margin">10dp</dimen>
+
+    <!-- fragment setting -->
+    <dimen name="fragment_setting_image_bottom_margin">10dp</dimen>
+    <dimen name="fragment_setting_top_margin">10dp</dimen>
+    <dimen name="fragment_setting_text_size">15dp</dimen>
+    <dimen name="fragment_setting_text_size_button">12dp</dimen>
+    <dimen name="fragment_setting_ethinicity_list_h">60dp</dimen>
+    <dimen name="fragment_setting_interest_list_h">80dp</dimen>
+    <dimen name="notification_icon_h_w">35dp</dimen>
+
+    <!-- row dimens -->
+    <dimen name="row_ethinicity_textSize">12sp</dimen>
+    <dimen name="row_grid_view_h">60dp</dimen>
+    <dimen name="row_grid_view_w">65dp</dimen>
+    <dimen name="row_grid_textsize">12sp</dimen>
+    <dimen name="row_home2_circle_image_view_h_w">50dp</dimen>
+    <dimen name="row_home2_name_textsize">20sp</dimen>
+    <dimen name="row_home2_about_textsize">15sp</dimen>
+    <dimen name="row_detail_dude_profile_interest_h">35dp</dimen>
+    <dimen name="row_detail_dude_profile_interest_w">35dp</dimen>
+    <dimen name="row_detail_dude_profile_interest_circl_h">36dp</dimen>
+    <dimen name="row_detail_dude_profile_interest_circl_w">36dp</dimen>
+    <dimen name="row_setting_interest_h_w">50dp</dimen>
+    <dimen name="row_setting_interest_text_size">10dp</dimen>
+    <dimen name="row_requist_cross_right_icon_h_w">30dp</dimen>
+    <dimen name="row_home_name_text_size">14dp</dimen>
+    <dimen name="row_home_distance_text_size">10dp</dimen>
+
+    <!-- fragment daily krave -->
+    <dimen name="fragment_daily_krave_detail_imageview_layout_height">150dp</dimen>
+    <dimen name="fragment_daily_krave_detail_layout_height">30dp</dimen>
+    <dimen name="fragment_daily_krave_detail_text_size">15dp</dimen>
+
+    <!-- block dude screen -->
+    <dimen name="block_dude_button_height">50dp</dimen>
+
+    <!-- Right menu screen -->
+    <dimen name="r_header_height">50dp</dimen>
+    <dimen name="r_left_right_icon_height_weight">30dp</dimen>
+    <dimen name="r_icon_margin_padding">5dp</dimen>
+    <dimen name="r_horizontal_list_view_size">70dp</dimen>
+    <dimen name="r_search_edit_text_height">50dp</dimen>
+    <dimen name="r_header_text_size">18dp</dimen>
+    <dimen name="r_layout_width">260dp</dimen>
+
+</resources>

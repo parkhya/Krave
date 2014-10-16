@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#414042"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/unreadMessageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" >
+
+            <ImageView
+                android:id="@+id/marker"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true" />
+
+            <com.ps.utill.CircleImageView
+                android:id="@+id/userimage"
+                android:layout_width="@dimen/row_home2_circle_image_view_h_w"
+                android:layout_height="@dimen/row_home2_circle_image_view_h_w"
+                android:layout_centerInParent="true"
+                android:src="@drawable/com_facebook_profile_picture_blank_square" />
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_width="@dimen/header_notification_height_weight"
+                android:layout_height="@dimen/header_notification_height_weight"
+                android:src="@drawable/notification" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/row_home2_name_textsize" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="30"
+                android:text="Medium Text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/row_home2_about_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

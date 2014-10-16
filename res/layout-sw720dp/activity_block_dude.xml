@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/congratulationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cc000000"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="@dimen/home2_margin11_top"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/dudeProfileImage"
+                    android:layout_width="@dimen/home2_icon2_widht"
+                    android:layout_height="@dimen/home2_icon2_height"
+                    android:layout_margin="@dimen/home2_icon_margin"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+                <ImageView
+                    android:id="@+id/dudeProfileImageStamp"
+                    android:layout_width="@dimen/home2_icon2_widht"
+                    android:layout_height="@dimen/home2_icon2_height"
+                    android:layout_margin="@dimen/home2_icon_margin"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/stamp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/dudeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="want to do ?"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/home2_text2_size" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </FrameLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/block"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/block_dude_button_height"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/home2_margin1111_left"
+            android:layout_marginRight="@dimen/home2_margin1111_right"
+            android:layout_marginTop="@dimen/home2_margin1111_top"
+            android:background="@drawable/block"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/report"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/block_dude_button_height"
+            android:layout_below="@+id/block"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/home2_margin2222_left"
+            android:layout_marginRight="@dimen/home2_margin2222_right"
+            android:layout_marginTop="@dimen/home2_margin2222_top"
+            android:background="@drawable/report"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/block_dude_button_height"
+            android:layout_below="@+id/report"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/home2_margin2222_left"
+            android:layout_marginRight="@dimen/home2_margin2222_right"
+            android:layout_marginTop="@dimen/home2_margin2222_top"
+            android:background="@drawable/cancel"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="What do you "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home2_text5_size" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="36dp"
+            android:gravity="center"
+            android:text="want to do ?"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/home2_text5_size" />
+    </RelativeLayout>
+
+</RelativeLayout>
